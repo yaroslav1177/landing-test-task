@@ -1,0 +1,196 @@
+.advantages {
+  padding-inline: 10px;
+  padding-top: 120px;
+  background-image: url("/images/advantages-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: -2px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px;
+}
+
+.advantages__item {
+  border: 1px solid #ffffff26;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.advantages__item-title {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.advantages__item-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* animation */
+
+.advantages__title,
+.advantages__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.advantages.visible .advantages__title,
+.advantages.visible .advantages__item {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+/* borders */
+
+.advantages__item-title--transactions {
+  border-left: 2px solid #1fcff1;
+}
+
+.advantages__item-title--security {
+  border-left: 2px solid #ffd512;
+}
+
+.advantages__item-title--decentralization {
+  border-left: 2px solid #9945ff;
+}
+
+.advantages__item-title--strategies {
+  border-left: 2px solid #19fb9b;
+}
+
+.advantages__item-title--performance {
+  border-left: 2px solid #1fcff1;
+}
+
+.advantages__item-title--interface {
+  border-left: 2px solid #ffd512;
+}
+
+/* images */
+
+.advantages__item--transactions {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/transactions.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.advantages__item--security {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("/images/security.jpg");
+  background-position: top left;
+  background-size: cover;
+}
+
+.advantages__item--decentralization {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("/images/decentralization.jpg");
+  background-position: top left;
+  background-size: cover;
+}
+
+.advantages__item--strategies {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("/images/strategies.jpg");
+  background-position: top left;
+  background-size: cover;
+}
+
+.advantages__item--performance {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("/images/performance.jpg");
+  background-position: top left;
+  background-size: cover;
+}
+
+.advantages__item--interface {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("/images/interface.jpg");
+  background-position: top left;
+  background-size: cover;
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    padding-inline: 100px;
+  }
+  .advantages__content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .advantages__item:nth-child(1) {
+    grid-column: span 4;
+  }
+
+  .advantages__item:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  .advantages__item:nth-child(3) {
+    grid-column: span 3;
+  }
+
+  .advantages__item:nth-child(4) {
+    grid-column: span 4;
+  }
+
+  .advantages__item:nth-child(5) {
+    grid-column: span 4;
+  }
+
+  .advantages__item:nth-child(6) {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 1600px) {
+  .advantages {
+    padding-top: 170px;
+    padding-inline: 370px;
+    /* margin-bottom: 170px; */
+  }
+}
+
+@media (min-width: 1900px) {
+  .advantages__item {
+    padding: 30px;
+  }
+  .advantages__title {
+    font-size: 48px;
+    line-height: 57px;
+    margin-bottom: 50px;
+  }
+  .advantages__item-title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 20px;
+  }
+  .advantages__item-description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

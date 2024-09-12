@@ -1,0 +1,128 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.pop-up {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 20px;
+  border: 1px solid #1e1e1e;
+  background-color: #000;
+  position: relative;
+  z-index: 11;
+}
+
+.pop-up__top {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding-block: 10px;
+}
+
+.pop-up__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.pop-up__middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pop-up__info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pop-up__address {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.pop-up__code-container {
+  display: flex;
+  gap: 7px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pop-up__code {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.pop-up__button {
+  margin: 0 auto;
+  margin-bottom: 0;
+  width: 120px;
+  padding: 10px 32px;
+  color: #fff;
+  background-color: #484848;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pop-up__button:hover {
+  background-color: #8C01FA;
+}
+
+.pop-up__button:active {
+  background-color:#18002B;
+}
+
+.copy-icon {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .pop-up {
+    width: 750px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .pop-up__code-container {
+    gap: 117px;
+  }
+}

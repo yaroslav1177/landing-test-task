@@ -10,7 +10,7 @@
   left: -30px;
   right: -30px;
   height: 65px;
-  background-image: url("/icons/solana-logo.svg");
+  background-image: url("../../icons/solana-logo.svg");
   background-repeat: repeat-x;
   background-size: contain;
   animation: marquee 60s linear infinite;
@@ -86,7 +86,7 @@
 }
 
 .header-content {
-  background-image: url("/images/header-bg.jpg");
+  background-image: url("../../images/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -141,7 +141,7 @@
 .header-content__button::after {
   content: "";
   position: absolute;
-  background-image: url("/icons/solana-bg.svg");
+  background-image: url("../../icons/solana-bg.svg");
   background-size: cover;
   background-position: center;
   top: -50px;

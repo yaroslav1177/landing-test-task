@@ -1,5 +1,5 @@
 .container-for-bg {
-  background-image: url('/images/why-us-circle.png'), url('/images/why-us-bg.jpg') ;
+  background-image: url('../../images/why-us-circle.png'), url('../../images/why-us-bg.jpg') ;
   background-position: center 410px, -100px -250px;
   background-repeat: no-repeat, repeat;
   overflow: hidden;
@@ -12,7 +12,7 @@
   right: -40px;
   left: -30px;
   height: 65px; 
-  background-image: url('/icons/solana-logo.svg'); 
+  background-image: url('../../icons/solana-logo.svg'); 
   background-repeat: repeat-x; 
   background-size: contain; 
   animation: marquee2 60s linear infinite; 

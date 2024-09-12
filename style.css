@@ -7,7 +7,7 @@
 @import url('./src/styles/blocks/footer.css');
 @import url('./src/styles/blocks/navigation.css');
 @import url('./src/styles/blocks/menu.css');
-@import url('./src/styles/blocks/pop-up');
+@import url('./src/styles/blocks/pop-up.css');
 
 html, body {
   font-family: "Poppins", sans-serif;

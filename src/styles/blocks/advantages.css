@@ -1,7 +1,7 @@
 .advantages {
   padding-inline: 10px;
   padding-top: 120px;
-  background-image: url("/images/advantages-bg.jpg");
+  background-image: url("../../images/advantages-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -90,42 +90,42 @@
 
 .advantages__item--transactions {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/transactions.jpg");
+    url("../../images/transactions.jpg");
   background-position: top;
   background-size: cover;
 }
 
 .advantages__item--security {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("/images/security.jpg");
+  url("../../images/security.jpg");
   background-position: top left;
   background-size: cover;
 }
 
 .advantages__item--decentralization {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("/images/decentralization.jpg");
+  url("../../images/decentralization.jpg");
   background-position: top left;
   background-size: cover;
 }
 
 .advantages__item--strategies {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("/images/strategies.jpg");
+  url("../../images/strategies.jpg");
   background-position: top left;
   background-size: cover;
 }
 
 .advantages__item--performance {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("/images/performance.jpg");
+  url("../../images/performance.jpg");
   background-position: top left;
   background-size: cover;
 }
 
 .advantages__item--interface {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("/images/interface.jpg");
+  url("../../images/interface.jpg");
   background-position: top left;
   background-size: cover;
 }

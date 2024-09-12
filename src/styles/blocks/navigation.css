@@ -41,7 +41,7 @@
 .navigation__link::after {
   content: '';
   position: absolute;
-  background-image: url('/icons/arrow-down.svg');
+  background-image: url('../../icons/arrow-down.svg');
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 }
 
 .navigation__link:hover::after {
-  background-image: url('/icons/arrow-down-white.svg');
+  background-image: url('../../icons/arrow-down-white.svg');
 }
 
 .navigation__button {
@@ -75,7 +75,7 @@
 .navigation__button::after {
   content: '';
   position: absolute;
-  background-image: url('/icons/info.svg');
+  background-image: url('../../icons/info.svg');
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 .navigation__button--purple-border::after {
   content: '';
   position: absolute;
-  background-image: url('/icons/arrow-up.svg');
+  background-image: url('../../icons/arrow-up.svg');
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;

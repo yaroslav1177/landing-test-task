@@ -22,12 +22,6 @@
   row-gap: 20px;
 }
 
-.advantages__item {
-  border: 1px solid #ffffff26;
-  border-radius: 16px;
-  padding: 20px;
-}
-
 .advantages__item-title {
   font-size: 26px;
   font-weight: 500;
@@ -44,8 +38,6 @@
   text-align: left;
 }
 
-/* animation */
-
 .advantages__title,
 .advantages__item {
   opacity: 0;
@@ -59,8 +51,6 @@
   transform: translateY(0);
   transition-delay: 0.2s;
 }
-
-/* borders */
 
 .advantages__item-title--transactions {
   border-left: 2px solid #1fcff1;
@@ -86,47 +76,42 @@
   border-left: 2px solid #ffd512;
 }
 
-/* images */
-
 .advantages__item--transactions {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../images/transactions.jpg");
-  background-position: top;
-  background-size: cover;
 }
 
 .advantages__item--security {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url("../../images/security.jpg");
-  background-position: top left;
-  background-size: cover;
 }
 
 .advantages__item--decentralization {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url("../../images/decentralization.jpg");
-  background-position: top left;
-  background-size: cover;
 }
 
 .advantages__item--strategies {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url("../../images/strategies.jpg");
-  background-position: top left;
-  background-size: cover;
 }
 
 .advantages__item--performance {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url("../../images/performance.jpg");
-  background-position: top left;
-  background-size: cover;
 }
 
 .advantages__item--interface {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url("../../images/interface.jpg");
-  background-position: top left;
+}
+
+.advantages__item {
+  border: 1px solid #ffffff26;
+  border-radius: 16px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
 }
 
@@ -171,7 +156,6 @@
   .advantages {
     padding-top: 170px;
     padding-inline: 370px;
-    /* margin-bottom: 170px; */
   }
 }
 

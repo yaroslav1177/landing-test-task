@@ -26,32 +26,6 @@
   margin-bottom: 30px;
 }
 
-.stake__button {
-  color: inherit;
-  height: 60px;
-  padding: 16px 32px;
-  border-radius: 50px;
-  background: linear-gradient(98.88deg, #8C01FA -2.99%, #18002B 102.28%);
-  border: none;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.stake__button:hover {
-  background: linear-gradient(98.88deg, #8C01FA -2.99%, #8C01FA 102.28%);
-}
-
-.stake__button:active {
-  background: linear-gradient(98.88deg, #18002B -2.99%, #18002B 102.28%);
-}
-
-/* animation */
-
 .stake__title,
 .stake__subtitle,
 .stake__button {
@@ -68,11 +42,9 @@
   transition-delay: 0.2s;
 }
 
-@media (min-width: 560px) {
-  .stake__button {
-    width: 200px;
-    margin: 0 auto;
-  }
+.button--without-image::after {
+  content: '';
+  display: none;
 }
 
 @media (min-width: 1600px) {

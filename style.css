@@ -1,13 +1,13 @@
-@import url('./src/styles/helpers/normalize.css');
-@import url('./src/styles/blocks/header.css');
-@import url('./src/styles/blocks/about.css');
-@import url('./src/styles/blocks/advantages.css');
-@import url('./src/styles/blocks/why-us.css');
-@import url('./src/styles/blocks/stake.css');
-@import url('./src/styles/blocks/footer.css');
-@import url('./src/styles/blocks/navigation.css');
-@import url('./src/styles/blocks/menu.css');
-@import url('./src/styles/blocks/pop-up.css');
+@import url('./assets/styles/helpers/normalize.css');
+@import url('./assets/styles/blocks/header.css');
+@import url('./assets/styles/blocks/about.css');
+@import url('./assets/styles/blocks/advantages.css');
+@import url('./assets/styles/blocks/why-us.css');
+@import url('./assets/styles/blocks/stake.css');
+@import url('./assets/styles/blocks/footer.css');
+@import url('./assets/styles/blocks/navigation.css');
+@import url('./assets/styles/blocks/menu.css');
+@import url('./assets/styles/blocks/pop-up.css');
 
 html, body {
   font-family: "Poppins", sans-serif;

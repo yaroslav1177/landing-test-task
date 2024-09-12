@@ -28,7 +28,7 @@
   z-index: 11;
 }
 
-.pop-up__top {
+.pop-up__header {
   background-color: #1e1e1e;
   display: flex;
   justify-content: center;
@@ -41,12 +41,11 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
 }
 
-.pop-up__middle {
+.pop-up__main {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -56,6 +55,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: calc(100% - 130px - 20px);
 }
 
 .pop-up__address {
@@ -78,10 +78,14 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: -0.02em;
   text-align: left;
   color: #fff;
   opacity: 0.8;
+  width: 100%;
+  max-width: calc(100% - 24px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .pop-up__button {
@@ -96,22 +100,22 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .pop-up__button:hover {
-  background-color: #8C01FA;
+  background-color: #8c01fa;
 }
 
 .pop-up__button:active {
-  background-color:#18002B;
+  background-color: #18002b;
 }
 
 .copy-icon {
   cursor: pointer;
+  width: 24px;
 }
 
 @media (min-width: 768px) {
@@ -121,8 +125,5 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-  }
-  .pop-up__code-container {
-    gap: 117px;
   }
 }

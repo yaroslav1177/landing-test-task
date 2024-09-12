@@ -27,18 +27,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .logo-marquee {
-    animation: marquee 10s linear infinite;
-  }
-}
-
-@media (min-width: 600px) {
-  .logo-marquee {
-    bottom: 100px;
-  }
-}
-
 .top-bar {
   box-sizing: border-box;
   height: 80px;
@@ -46,7 +34,7 @@
   position: fixed;
   width: 100%;
   background-color: #000;
-  z-index: 2;
+  z-index: 4;
 }
 
 .tob-bar__content {
@@ -83,6 +71,8 @@
 .top-bar__burger {
   display: flex;
   align-items: center;
+  border: none;
+  background-color: #000;
 }
 
 .header-content {
@@ -104,17 +94,19 @@
   line-height: 45px;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  max-width: 980px;
 }
 
-.header-content__subtitle {
+.header-content__description {
   font-size: 20px;
   text-align: center;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 30px;
+  max-width: 980px;
 }
 
-.header-content__button {
+.button {
   color: inherit;
   height: 60px;
   padding: 16px 32px;
@@ -127,18 +119,21 @@
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
-  /* transition: background 0.3s ease; */
+  z-index: 3;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 1;
 }
 
-.header-content__button:hover {
-  background: linear-gradient(98.88deg, #8C01FA -2.99%, #8C01FA 102.28%);
+.button:hover {
+  background: linear-gradient(98.88deg, #8c01fa -2.99%, #8c01fa 102.28%);
+  opacity: 0.8;
 }
 
-.header-content__button:active {
-  background: linear-gradient(98.88deg, #18002B -2.99%, #18002B 102.28%);
+.button:active {
+  background: linear-gradient(98.88deg, #18002b -2.99%, #18002b 102.28%);
 }
 
-.header-content__button::after {
+.button::after {
   content: "";
   position: absolute;
   background-image: url("../../icons/solana-bg.svg");
@@ -154,16 +149,28 @@
 }
 
 @media (min-width: 560px) {
-  .header-content__button {
-    width: 200px;
+  .button {
+    min-width: 200px;
     margin: 0 auto;
   }
-  .header-content__button::after {
+  .button::after {
     top: -40px;
     left: 0;
   }
   .header-content {
     background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-marquee {
+    animation: marquee 10s linear infinite;
+  }
+}
+
+@media (min-width: 600px) {
+  .logo-marquee {
+    bottom: 100px;
   }
 }
 
@@ -191,7 +198,7 @@
   .top-bar__burger {
     display: none;
   }
-  .header-content__button::after {
+  .button::after {
     top: -150px;
     left: -90px;
     width: 390px;
@@ -212,7 +219,7 @@
   .header-content__title {
     margin-bottom: 50px;
   }
-  .header-content__subtitle {
+  .header-content__description {
     margin-bottom: 50px;
   }
 }

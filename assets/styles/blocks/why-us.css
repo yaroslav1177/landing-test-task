@@ -1,45 +1,25 @@
 .container-for-bg {
-  background-image: url('../../images/why-us-circle.png'), url('../../images/why-us-bg.jpg') ;
+  background-image: url("../../images/why-us-circle.png"),
+    url("../../images/why-us-bg.jpg");
   background-position: center 410px, -100px -250px;
   background-repeat: no-repeat, repeat;
   overflow: hidden;
   position: relative;
 }
 
-.logo-marquee2 { 
-  position: absolute; 
-  bottom: 240px; 
+.logo-marquee--mirrored {
+  position: absolute;
+  bottom: 240px;
   right: -40px;
   left: -30px;
-  height: 65px; 
-  background-image: url('../../icons/solana-logo.svg'); 
-  background-repeat: repeat-x; 
-  background-size: contain; 
-  animation: marquee2 60s linear infinite; 
-  transform: rotate(-10deg); 
+  height: 65px;
+  background-image: url("../../icons/solana-logo.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: marquee--mirrored 60s linear infinite;
+  transform: rotate(-10deg);
   filter: blur(2px);
   z-index: 3;
-} 
-
-@keyframes marquee2 { 
-  0% { 
-    background-position: 0 0; 
-  } 
-  100% { 
-    background-position: -100% 0; 
-  } 
-}
-
-@media (max-width: 600px) {
-  .logo-marquee2 {
-    animation: marquee2 10s linear infinite;
-  }
-}
-
-@media (min-width: 600px) {
-  .logo-marquee2 {
-    bottom: 170px;
-  }
 }
 
 .why-us {
@@ -103,8 +83,6 @@
   text-align: center;
 }
 
-/* animation */
-
 .why-us__title,
 .why-us__subtitle,
 .why-us__item {
@@ -119,6 +97,15 @@
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
+}
+
+@keyframes marquee--mirrored {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -136,17 +123,29 @@
     row-gap: 20px;
     column-gap: 20px;
   }
-  
+
   .why-us__item:nth-child(1) {
     grid-column: span 2;
   }
-  
+
   .why-us__item:nth-child(2) {
     grid-column: span 2;
   }
-  
+
   .why-us__item:nth-child(3) {
     grid-column: span 4;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-marquee--mirrored {
+    animation: marquee--mirrored 10s linear infinite;
+  }
+}
+
+@media (min-width: 600px) {
+  .logo-marquee--mirrored {
+    bottom: 170px;
   }
 }
 

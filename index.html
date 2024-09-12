@@ -10,25 +10,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./src/icons/favicon.svg" type="image/svg+xml">
-    <script src="script.js"></script>
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+    <script type="module" src="script.js"></script>
     <title>Platform</title>
   </head>
   <body>
     <header class="header">
-      <!-- <div class="container"> -->
         <div class="top-bar">
           <div class="tob-bar__content">
             <div class="top-bar__logo">
-              <img src="./src/icons/main-logo.svg" alt="platform logo" class="top-bar__image" />
+              <img src="./assets/icons/main-logo.svg" alt="platform logo" class="top-bar__image" />
               <p class="top-bar__title">Platform</p>
             </div>
-            <div class="top-bar__burger">
+            <button class="top-bar__burger">
               <a href="#menu" class="top-bar__menu-link">
-                <img src="./src/icons/burger.svg" alt="burger menu" />
+                <img src="./assets/icons/burger.svg" alt="burger menu" />
               </a>
-            </div>
+            </button>
           </div>
+
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -57,30 +57,29 @@
           <h1 class="header-content__title">
             Unlock the Power of Platform - Your Gateway to Solana's Potential
           </h1>
-          <p class="header-content__subtitle">
+          <p class="header-content__description">
             Elevate your Solana experience to new heights with Platform
             Validator, a cutting-edge solution that ensures lightning-fast
             transactions and robust security measures for your blockchain
             endeavors.
           </p>
 
-          <button class="header-content__button">Get started</button>
+          <button class="button">Get started</button>
         </div>
         <div class="logo-marquee"></div>
-      <!-- </div> -->
     </header>
 
     <aside class="menu" id="menu">
       <div class="tob-bar__content">
         <div class="top-bar__logo">
-          <img src="./src/icons/main-logo.svg" alt="platform logo" class="top-bar__image" />
+          <img src="./assets/icons/main-logo.svg" alt="platform logo" class="top-bar__image" />
           <p class="top-bar__title">Platform</p>
         </div>
-        <div class="top-bar__burger">
+        <button class="top-bar__burger">
           <a href="#menu" class="top-bar__menu-link">
-            <img src="./src/icons/close.svg" alt="close menu" />
+            <img src="./assets/icons/close.svg" alt="close menu" />
           </a>
-        </div>
+        </button>
       </div>
       <div class="menu__info">
         <div class="menu__info-left">
@@ -98,17 +97,17 @@
 
     <div class="overlay">
       <div class="pop-up">
-        <div class="pop-up__top">
-          <img src="./src/icons/solana-icon.svg" alt="solana icon" class="pop-up__icon">
+        <div class="pop-up__header">
+          <img src="./assets/icons/solana-icon.svg" alt="solana icon" class="pop-up__icon">
           <p class="pop-up__name">solana</p>
         </div>
-        <div class="pop-up__middle">
-          <img src="./src/icons/code.svg" alt="code" class="pop-up__image">
+        <div class="pop-up__main">
+          <img src="./assets/icons/code.svg" alt="code" class="pop-up__image">
           <div class="pop-up__info">
             <p class="pop-up__address">Address:</p>
             <div class="pop-up__code-container">
               <p class="pop-up__code">3rqEEEGjHRyndHuduBcjkf17X3hgmGACpYTQYeZ5Ltk</p>
-              <img src="./src/icons/copy.svg" alt="copy" class="copy-icon">
+              <img src="./assets/icons/copy.svg" alt="copy icon" class="copy-icon">
             </div>
           </div>
         </div>
@@ -118,7 +117,6 @@
     
 
     <main>
-      <!-- <div class="container"> -->
         <section class="about" id="about">
           <div class="about__content">
             <h2 class="about__title">About</h2>
@@ -133,11 +131,12 @@
             </p>
           </div>
           <img
-            src="./src/images/about-image.jpg"
+            src="./assets/images/about-image.jpg"
             alt="about image"
             class="about__image"
           />
         </section>
+
         <section class="advantages" id="advantages">
           <h2 class="advantages__title">Advantages that Set Platform Apart</h2>
           <div class="advantages__content">
@@ -210,7 +209,9 @@
             </div>
           </div>
         </section>
+
         <div class="container-for-bg">
+
           <section class="why-us" id="why-us">
             <h2 class="why-us__title">Why us</h2>
             <p class="why-us__subtitle">
@@ -220,7 +221,7 @@
               <div class="why-us__item">
                 <div class="why-us__top">
                   <img
-                    src="./src/icons/security-icon.svg"
+                    src="./assets/icons/security-icon.svg"
                     alt="security icon"
                     class="why-us__icon"
                   />
@@ -238,7 +239,7 @@
               <div class="why-us__item">
                 <div class="why-us__top">
                   <img
-                    src="./src/icons/infrastructure-icon.svg"
+                    src="./assets/icons/infrastructure-icon.svg"
                     alt="infrastructure icon"
                     class="why-us__icon"
                   />
@@ -268,79 +269,81 @@
               </div>
             </div>
           </section>
+
           <section class="stake">
             <div class="stake__content">
               <h2 class="stake__title">Stake with us</h2>
               <p class="stake__subtitle">
                 Let's forge a brighter future hand in hand.
               </p>
-              <button class="stake__button">Stake now</button>
+              <button class="button button--without-image">Stake now</button>
             </div>
           </section>
-          <div class="logo-marquee2"></div>
+
+          <div class="logo-marquee--mirrored"></div>
+          
           <footer class="footer">
             <div class="footer__content">
-              <p class="footer__info">Platform | (c) Copyright All rights reserved</p>
-              <div class="footer__contacts">
-                <ul class="footer__list">
-                  <li class="footer__item">
-                    <a href="/" class="footer__link">
+              <p class="footer__info">Platform | &#9400 Copyright All rights reserved</p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
                       <img
-                        src="./src/icons/youtube.svg"
+                        src="./assets/icons/youtube.svg"
                         alt="youtube"
-                        class="footer__icon"
+                        class="social__icon"
                       />
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="/" class="footer__link">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
                       <img
-                        src="./src/icons/twitter.svg"
+                        src="./assets/icons/twitter.svg"
                         alt="twitter"
-                        class="footer__icon"
+                        class="social__icon"
                       />
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="/" class="footer__link">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
                       <img
-                        src="./src/icons/discord.svg"
+                        src="./assets/icons/discord.svg"
                         alt="discord"
-                        class="footer__icon"
+                        class="social__icon"
                       />
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="/" class="footer__link">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
                       <img
-                        src="./src/icons/reddit.svg"
+                        src="./assets/icons/reddit.svg"
                         alt="reddit"
-                        class="footer__icon"
+                        class="social__icon"
                       />
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="/" class="footer__link">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
                       <img
-                        src="./src/icons/github.svg"
+                        src="./assets/icons/github.svg"
                         alt="github"
-                        class="footer__icon"
+                        class="social__icon"
                       />
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="/" class="footer__link">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
                       <img
-                        src="./src/icons/telegram.svg"
+                        src="./assets/icons/telegram.svg"
                         alt="telegram"
-                        class="footer__icon"
+                        class="social__icon"
                       />
                     </a>
                   </li>
                 </ul>
-              </div>
             </div>
           </footer>
+
         </div>
     </main>
   </body>
